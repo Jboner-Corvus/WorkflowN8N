@@ -1,0 +1,214 @@
+{
+  "nodes": [
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        -3000,
+        2440
+      ],
+      "id": "edd145f4-850f-41b2-9b41-a40e320351b8",
+      "name": "When chat message received",
+      "webhookId": "REMPLACER_PAR_VOTRE_ID_DE_WEBHOOK"
+    },
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "REMPLACER_PAR_VOTRE_PATH_WEBHOOK",
+        "options": {
+          "rawBody": true
+        }
+      },
+      "id": "2e6c61be-4f98-4839-9179-f551a7678c42",
+      "name": "Webhook pour Callback MCP2",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1.1,
+      "position": [
+        -2920,
+        2680
+      ],
+      "webhookId": "REMPLACER_PAR_VOTRE_ID_DE_WEBHOOK_CALLBACK"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.chatInput }}",
+        "options": {
+          "systemMessage": "=Vous êtes un assistant IA conçu pour aider les utilisateurs.\n\nInstructions importantes :\n- Répondez toujours en français.\n- Soyez concis mais complet.\n- Analysez attentivement la question posée.\n- Formulez une réponse claire et directe.\n\nCommençons !\n\nQuestion : chatInput\nPensée : [Votre processus de pensée ici pour analyser la question et préparer la réponse.]\nRéponse finale : [Votre réponse finale et complète à la question originale de l'utilisateur.]"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.9,
+      "position": [
+        -2620,
+        2440
+      ],
+      "id": "bafa2488-a18b-4484-b4a3-3e13801109f5",
+      "name": "AI Agent"
+    },
+    {
+      "parameters": {
+        "modelName": "models/gemini-2.0-flash",
+        "options": {}
+      },
+      "id": "90899bba-4160-40b7-8c71-0fb449f582d6",
+      "name": "Google Gemini Chat Model",
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        -2660,
+        2620
+      ],
+      "credentials": {
+        "googlePalmApi": {
+          "id": "VOTRE_ID_DE_CREDENTIAL_GOOGLE",
+          "name": "VOTRE_NOM_DE_COMPTE_GOOGLE_API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "sessionIdType": "customKey",
+        "sessionKey": "={{ $json.userId }}_agent52"
+      },
+      "id": "c398d9a6-aadc-4888-8b5f-938c71b4ba8e",
+      "name": "Redis Chat Memory",
+      "type": "@n8n/n8n-nodes-langchain.memoryRedisChat",
+      "typeVersion": 1.5,
+      "position": [
+        -2540,
+        2640
+      ],
+      "credentials": {
+        "redis": {
+          "id": "VOTRE_ID_DE_CREDENTIAL_REDIS",
+          "name": "VOTRE_NOM_DE_COMPTE_REDIS"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "f421531b-646f-498e-b93e-de606a8e96a4",
+              "name": "chatInput",
+              "value": "={{ $json.chatInput }}",
+              "type": "string"
+            },
+            {
+              "id": "30951840-57dd-4321-bcba-378c21358929",
+              "name": "userId",
+              "value": "={{ $json.sessionId }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -2800,
+        2440
+      ],
+      "id": "c4cb68ef-e504-4258-ba1a-9dc30e5f9c59",
+      "name": "Edit Fields1"
+    },
+    {
+      "parameters": {
+        "sseEndpoint": "=http://192.168.2.56:8081/sse",
+        "authentication": "bearerAuth"
+      },
+      "type": "@n8n/n8n-nodes-langchain.mcpClientTool",
+      "typeVersion": 1,
+      "position": [
+        -2440,
+        2620
+      ],
+      "id": "95b6f6a3-ffd7-4eb7-ae2b-10209111f370",
+      "name": "MCP Client",
+      "credentials": {
+        "httpBearerAuth": {
+          "id": "VOTRE_ID_DE_CREDENTIAL_BEARER",
+          "name": "VOTRE_NOM_DE_COMPTE_BEARER_AUTH"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "When chat message received": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Webhook pour Callback MCP2": {
+      "main": [
+        []
+      ]
+    },
+    "AI Agent": {
+      "main": [
+        []
+      ]
+    },
+    "Google Gemini Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Redis Chat Memory": {
+      "ai_memory": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields1": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "MCP Client": {
+      "ai_tool": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "pinData": {},
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "REMPLACER_PAR_VOTRE_ID_INSTANCE_N8N_SI_NECESSAIRE"
+  }
+}
