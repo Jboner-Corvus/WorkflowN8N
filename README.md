@@ -1,5 +1,24 @@
 # 🤖 Projet d'Assistant Robot Intelligent
 
+## ✅ Étape 1 : Prérequis - Les Outils Essentiels
+
+Pour construire notre projet, nous avons besoin de trois éléments fondamentaux : la machine, un moyen de s'y connecter et une adresse pour la trouver.
+
+### 1. Le Serveur (La Machine)
+Il nous faut un ordinateur distant qui fonctionnera 24h/24.
+* **Un Serveur Privé Virtuel (VPS)** : C'est un ordinateur que vous louez.
+* **Système d'Exploitation Linux** : C'est le "cerveau" du serveur. Pour ce guide, nous utilisons spécifiquement **Ubuntu 22.04**, mais d'autres distributions Linux (comme Debian) fonctionneraient avec de légères adaptations.
+
+### 2. La Connexion (La Clé d'Accès)
+Pour communiquer avec notre serveur de manière sécurisée, nous utilisons le protocole SSH.
+* **Un client SSH** : C'est le logiciel sur **votre ordinateur personnel** qui vous permet de vous connecter.
+    * **Windows :** Le Terminal Windows, PowerShell, ou un outil comme [PuTTY](https://www.putty.org/).
+    * **macOS / Linux :** L'application "Terminal" est déjà installée.
+
+### 3. L'Adresse (Le Panneau Indicateur)
+ C'ests l'adresse IP de votre serveur. 
+
+
 <div style="background-color: #f0f8ff; border-left: 6px solid #4285f4; padding: 15px; margin-top: 20px; margin-bottom: 20px; border-radius: 5px;">
   <strong>Salut !</strong> Bienvenue dans ce projet de construction. Ici, tu vas apprendre à assembler un assistant robot intelligent qui peut discuter avec toi et t'aider à accomplir des tâches.
 </div>
