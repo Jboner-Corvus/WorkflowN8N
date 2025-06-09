@@ -1,7 +1,7 @@
 # 🤖 Projet d'Assistant Robot Intelligent
 
-![Icône MCP](https://placehold.co/128x128/f0f8ff/4285f4?text=mcp.png)
-![Agent de flux de travail](https://placehold.co/800x200/cccccc/333333?text=Workflow_agent.bmp)
+
+![Agent de flux de travail](./assets/Workflow_agent.bmp)
 
 ## ✅ Étape 1 : Prérequis - Les Outils Essentiels
 
