@@ -2,6 +2,8 @@
 
 ![Agent de flux de travail](./assets/Workflow_agent.bmp)
 
+
+
 ## ✅ Étape 1 : Prérequis - Les Outils Essentiels
 
 Pour construire notre projet, nous avons besoin de trois éléments fondamentaux : la machine, un moyen de s'y connecter et une adresse pour la trouver.
@@ -47,6 +49,10 @@ Notre agent possède une "boîte à outils" spéciale qui lui donne des capacit�
 * **Nom de code :** `synchronousExampleTool`
 * **Description :** Pour les tâches très rapides. L'agent fait ce que vous demandez et vous donne la réponse immédiatement !
 
+
+
+![Mcp inspector](./assets/MCP_inspector.png)
+
 ## Créez vos propres Outils ! 🎨
 
 > ### Le projet est modulaire !
@@ -65,3 +71,5 @@ Imaginez un **agent "manager"** qui reçoit un objectif complexe et le décompos
 * Un programmeur.
 
 Ces agents collaborent pour accomplir une mission d'envergure. En maîtrisant la création d'un agent, vous faites le premier pas pour orchestrer demain une **entreprise entièrement numérique**.
+
+![Agent multi-agent flux de travail](./assets/Workflow_multi_agent.bmp)
