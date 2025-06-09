@@ -27,7 +27,7 @@ Cet agent intelligent est un véritable partenaire numérique. Il ne se contente
 
 ---
 
-## 🧰 La boîte à outils de l'Agent (Outils MCP)  ![Icône MCP](./assets/mcp.png)
+## ![Icône MCP](./assets/mcp.png) La boîte à outils de l'Agent (Outils MCP)  
 
 Notre agent possède une "boîte à outils" spéciale fournie par un serveur assistant, le **serveur MCP** (Model Context Protocol), qui lui confère des capacités uniques.
 
