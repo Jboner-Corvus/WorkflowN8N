@@ -77,15 +77,20 @@ Pour faire fonctionner l'agent, vous devez déployer ses deux composants princip
 
 ### 🛠️ Étapes d'installation
 
-#### Étape 1 : Installer et lancer n8n
+#### Étape 1 : Installer et configurer n8n
 
-Sur votre serveur, exécutez la commande suivante pour télécharger et démarrer n8n dans un conteneur Docker. L'application sera accessible sur le port `5678`.
+1.  **Lancer n8n :** Sur votre serveur, exécutez la commande suivante pour télécharger et démarrer n8n dans un conteneur Docker. L'application sera accessible sur le port `5678`.
 
-```bash
-docker run -it --rm --name n8n -p 5678:5678 -v n8n_data:/home/node/.n8n docker.n8n.io/n8nio/n8n
-```
-Étape 2 : Installer le Serveur MCP 
-Ensuite, clonez le dépôt du serveur MCP et suivez les instructions de son propre fichier README.md pour le configurer et le lancer.
+    ```bash
+    docker run -it --rm --name n8n -p 5678:5678 -v n8n_data:/home/node/.n8n docker.n8n.io/n8nio/n8n
+    ```
+
+2.  **Importer le Workflow :** Une fois n8n lancé, ouvrez votre navigateur et accédez à l'interface (généralement `http://<votre_adresse_ip>:5678`). Importez ensuite le fichier `workflow_agent_ia.json` qui se trouve dans ce projet. C'est ce workflow qui contient la logique principale de l'agent.
+
+#### Étape 2 : Installer le Serveur MCP
+
+Ensuite, clonez le dépôt du serveur MCP et suivez les instructions de son propre fichier `README.md` pour le configurer et le lancer.
+
 
 ```bash
 
