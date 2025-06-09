@@ -6,35 +6,24 @@
 
 ---
 
-🧐 Que fait cet agent ?
+
+## 🧐 Que fait cet agent ?
 
 Cet agent intelligent est un véritable partenaire numérique. Il ne se contente pas de discuter ; il agit. Voici ce qu'il peut faire concrètement :
 
-Comprendre et Planifier : Grâce à l'IA de Google, il décode vos instructions, même complexes, et établit un plan d'action.
-
-Raisonner avec une Personnalité Modifiable : Au cœur de l'agent se trouve un "prompt system" que vous pouvez entièrement personnaliser. Modifiez ses instructions de base, son caractère, sa manière de réfléchir ou ses objectifs pour créer un assistant parfaitement adapté à vos besoins.
-
-Exécuter une infinité de Tâches : Sa véritable force réside dans sa "boîte à outils" extensible. Imaginez pouvoir lui demander de :
-
-Chercher sur le web et vous synthétiser les résultats.
-
-Lire et écrire dans des fichiers sur le serveur.
-
-Générer et exécuter du code dans n'importe quel langage.
-
-Envoyer des emails ou des notifications sur Slack et Discord.
-
-Se connecter à n'importe quelle API (météo, bourse, gestion de projet...).
-
-Générer des images à partir d'une description.
-
-Interagir avec des bases de données pour en extraire des informations.
-
-... Et bien plus encore. Chaque nouvel outil est un nouveau super-pouvoir.
-
-Mémoriser le Contexte : Il se souvient de vos conversations précédentes pour affiner ses réponses et ses actions, offrant une assistance personnalisée.
-
-Rendre Compte : Une fois sa mission accomplie, il vous présente le résultat de manière claire et concise.
+* **Comprendre et Planifier :** Grâce à l'IA de Google, il décode vos instructions, même complexes, et établit un plan d'action.
+* **Raisonner avec une Personnalité Modifiable :** Au cœur de l'agent se trouve un "prompt system" que vous pouvez entièrement personnaliser. Modifiez ses instructions de base, son caractère, sa manière de réfléchir ou ses objectifs pour créer un assistant parfaitement adapté à vos besoins.
+* **Exécuter une infinité de Tâches :** Sa véritable force réside dans sa "boîte à outils" extensible. Imaginez pouvoir lui demander de :
+    * **Chercher sur le web** et vous synthétiser les résultats.
+    * **Lire et écrire dans des fichiers** sur le serveur.
+    * **Générer et exécuter du code** dans n'importe quel langage.
+    * **Envoyer des emails ou des notifications** sur Slack et Discord.
+    * **Se connecter à n'importe quelle API** (météo, bourse, gestion de projet...).
+    * **Générer des images** à partir d'une description.
+    * **Interagir avec des bases de données** pour en extraire des informations.
+    * ... Et bien plus encore. Chaque nouvel outil est un nouveau super-pouvoir.
+* **Mémoriser le Contexte :** Il se souvient de vos conversations précédentes pour affiner ses réponses et ses actions, offrant une assistance personnalisée.
+* **Rendre Compte :** Une fois sa mission accomplie, il vous présente le résultat de manière claire et concise.
 
 ---
 
