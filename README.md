@@ -1,4 +1,4 @@
-# 🤖 Projet d'Assistant Robot Intelligent
+# ![Icône MCP](./assets/mcp.png) Projet d'Assistant Robot Intelligent
 
 
 ![Agent de flux de travail](./assets/Workflow_agent.bmp)
