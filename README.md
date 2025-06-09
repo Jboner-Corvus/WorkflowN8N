@@ -1,75 +1,86 @@
-# ![Icône MCP](./assets/mcp.png) Projet d'Assistant Agent Intelligent
+# Projet d'Assistant Agent Intelligent
 
-![Agent de flux de travail](./assets/Workflow_agent.bmp)
+![Image de l'agent de flux de travail](./assets/Workflow_agent.bmp)
 
+> **Bienvenue !** Ce projet vous guide dans la construction d'un assistant agent intelligent capable non seulement de dialoguer, mais aussi d'agir et de vous aider à accomplir des tâches concrètes.
 
+---
 
-## ✅ Étape 1 : Prérequis - Les Outils Essentiels
+## 🧐 Que fait cet agent ?
 
-Pour construire notre projet, nous avons besoin de trois éléments fondamentaux : la machine, un moyen de s'y connecter et une adresse pour la trouver.
+C'est un **agent intelligent** qui va au-delà du simple dialogue. Il est conçu pour comprendre vos besoins et agir en conséquence. Le processus est simple :
 
-### 1. Le Serveur (La Machine)
-Il nous faut un ordinateur distant qui fonctionnera 24h/24.
-* **Un Serveur Privé Virtuel (VPS)** : C'est un ordinateur que vous louez.
-* **Système d'Exploitation Linux** : C'est le "cerveau" du serveur. Pour ce guide, nous utilisons spécifiquement **Ubuntu 22.04**.
+1.  **Vous lui donnez un ordre**, une question ou une tâche à accomplir.
+2.  L'agent utilise une **Intelligence Artificielle de Google** pour comprendre, réfléchir et planifier une action.
+3.  Il dispose d'une mémoire pour **se souvenir du contexte** de vos conversations et mieux vous assister.
+4.  Il vous **répond**, mais peut aussi **agir** en utilisant sa boîte à outils pour exécuter des tâches.
 
-### 2. La Connexion (La Clé d'Accès)
-Pour communiquer avec notre serveur de manière sécurisée, nous utilisons le protocole SSH.
-* **Un client SSH** : C'est le logiciel sur **votre ordinateur personnel** qui vous permet de vous connecter.
-    * **Windows :** Le Terminal Windows, PowerShell, ou un outil comme [PuTTY](https://www.putty.org/).
-    * **macOS / Linux :** L'application "Terminal" est déjà installée.
+---
 
-### 3. L'Adresse (Le Panneau Indicateur)
-C'est l'adresse IP de votre serveur.
+## 🧰 La boîte à outils de l'Agent (Outils MCP)  ![Icône MCP](./assets/mcp.png)
 
-> **Salut !** Bienvenue dans ce projet de construction. Ici, tu vas apprendre à assembler un assistant agent intelligent capable non seulement de discuter avec toi, mais aussi de t'aider à accomplir des tâches.
+Notre agent possède une "boîte à outils" spéciale fournie par un serveur assistant, le **serveur MCP** (Model Context Protocol), qui lui confère des capacités uniques.
 
-## Que fait cet agent ? 🧐
-
-C'est un **agent intelligent** qui va bien au-delà du simple dialogue. Il est conçu pour comprendre vos besoins et agir en conséquence. Le processus est simple :
-
-1.  **Tu lui donnes un ordre, une question ou une tâche à accomplir.**
-2.  L'agent utilise son puissant processeur (une **Intelligence Artificielle de Google**) pour comprendre, réfléchir et planifier une action.
-3.  Il a une bonne mémoire et **se souvient du contexte** de vos conversations précédentes pour mieux vous assister.
-4.  Il vous **répond**, mais peut aussi **agir** en utilisant sa boîte à outils pour exécuter des tâches concrètes.
-
-## La boîte à outils de l'Agent (Les Outils MCP) 🧰
-
-Notre agent possède une "boîte à outils" spéciale qui lui donne des capacités uniques. Ces outils lui sont fournis par un ordinateur assistant, le **serveur MCP** (Maître de Contrôle du Projet).
+![Image de l'inspecteur MCP](./assets/MCP_inspector.png)
 
 #### 🕵️ L'outil d'identification
 * **Nom de code :** `debugContextTool`
-* **Description :** Cet outil permet à l'agent de vérifier qui lui parle. C'est un peu comme un badge de sécurité qui confirme votre identité.
+* **Description :** Permet à l'agent de vérifier qui lui parle. C'est un badge de sécurité qui confirme votre identité.
 
-#### 🐢 L'outil Marathon
+#### 🐢 L'outil Marathon (Asynchrone)
 * **Nom de code :** `asynchronousTaskSimulatorEnhanced`
-* **Description :** Pour les longues missions, comme un grand calcul. L'agent lance la tâche, vous prévient qu'il a commencé, et vous envoie le résultat seulement quand il a fini.
+* **Description :** Pour les missions longues (ex: un grand calcul). L'agent lance la tâche, vous prévient qu'il a commencé, et vous envoie le résultat seulement quand il a terminé.
 
-#### ⚡ L'outil Sprinter
+#### ⚡ L'outil Sprinter (Synchrone)
 * **Nom de code :** `synchronousExampleTool`
-* **Description :** Pour les tâches très rapides. L'agent fait ce que vous demandez et vous donne la réponse immédiatement !
+* **Description :** Pour les tâches très rapides. L'agent exécute la commande et vous donne la réponse immédiatement.
 
+### 🎨 Créez vos propres outils !
 
-
-![Mcp inspector](./assets/MCP_inspector.png)
-
-## Créez vos propres Outils ! 🎨
-
-> ### Le projet est modulaire !
-> Le plus amusant, c'est que vous pouvez inventer et ajouter vos propres outils à la boîte à outils de l'agent pour lui donner de nouveaux super-pouvoirs !
-> N'hésitez pas à expérimenter et à étendre les capacités de votre assistant.
+**Le projet est modulaire !** Vous pouvez inventer et ajouter vos propres outils à la boîte à outils de l'agent pour lui donner de nouveaux super-pouvoirs. N'hésitez pas à expérimenter et à étendre les capacités de votre assistant.
 
 ---
+
 ## 🚀 Au-delà de l'Agent : Vers l'Organisation Numérique
 
-Ce projet est la première brique. Mais en assemblant plusieurs agents, chacun avec des compétences spécifiques, on peut créer bien plus qu'un assistant : une véritable **organisation numérique**.
+Ce projet est une première brique. En assemblant plusieurs agents, chacun avec des compétences spécifiques, on peut créer une véritable **organisation numérique**.
 
-Imaginez un **agent "manager"** qui reçoit un objectif complexe et le décompose en plusieurs sous-tâches. Il les distribue ensuite à des **agents "spécialistes"** :
-* Un expert en recherche web.
-* Un analyste de données.
-* Un rédacteur technique.
-* Un programmeur.
+Imaginez un **agent "manager"** qui décompose un objectif complexe en sous-tâches et les distribue à des **agents "spécialistes"** (chercheur web, analyste, rédacteur, programmeur...). Ces agents collaborent pour accomplir une mission d'envergure. En maîtrisant ce projet, vous faites le premier pas pour orchestrer une **entreprise entièrement numérique**.
 
-Ces agents collaborent pour accomplir une mission d'envergure. En maîtrisant la création d'un agent, vous faites le premier pas pour orchestrer demain une **entreprise entièrement numérique**.
+![Image d'un flux de travail multi-agent](./assets/Workflow_multi_agent.bmp)
 
-![Agent multi-agent flux de travail](./assets/Workflow_multi_agent.bmp)
+---
+
+## ⚙️ Guide d'Installation
+
+Pour faire fonctionner l'agent, vous devez déployer ses deux composants principaux : le moteur de workflow **n8n** et le **Serveur MCP** qui lui fournit les outils.
+
+### ✅ Prérequis
+
+1.  **Un Serveur :** Un ordinateur distant fonctionnant 24h/24.
+    * **Type :** Serveur Privé Virtuel (VPS) recommandé.
+    * **Système d'exploitation :** **Ubuntu 22.04**.
+2.  **Un Client SSH :** Le logiciel sur votre ordinateur personnel pour vous connecter à votre serveur.
+    * **Windows :** Terminal Windows, PowerShell, ou [PuTTY](https://www.putty.org/).
+    * **macOS / Linux :** L'application "Terminal" intégrée.
+3.  **Docker :** L'outil de conteneurisation pour lancer n8n. Si vous ne l'avez pas, suivez le [guide d'installation officiel de Docker](https://docs.docker.com/engine/install/ubuntu/).
+
+### 🛠️ Étapes d'installation
+
+#### Étape 1 : Installer et lancer n8n
+
+Sur votre serveur, exécutez la commande suivante pour télécharger et démarrer n8n dans un conteneur Docker. L'application sera accessible sur le port `5678`.
+
+```bash
+docker run -it --rm --name n8n -p 5678:5678 -v n8n_data:/home/node/.n8n docker.n8n.io/n8nio/n8n
+```
+Étape 2 : Installer le Serveur MCP 
+Ensuite, clonez le dépôt du serveur MCP et suivez les instructions de son propre fichier README.md pour le configurer et le lancer.
+
+```bash
+
+git clone [https://github.com/Jboner-Corvus/MCP-Server-Asynchrone.git](https://github.com/Jboner-Corvus/MCP-Server-Asynchrone.git)
+cd MCP-Server-Asynchrone
+# Suivez les instructions du README de ce projet
+```
+Une fois ces deux étapes terminées, votre agent sera prêt à fonctionner !
