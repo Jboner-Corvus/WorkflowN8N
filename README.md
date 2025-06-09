@@ -1,5 +1,8 @@
 # 🤖 Projet d'Assistant Robot Intelligent
 
+![Icône MCP](https://placehold.co/128x128/f0f8ff/4285f4?text=mcp.png)
+![Agent de flux de travail](https://placehold.co/800x200/cccccc/333333?text=Workflow_agent.bmp)
+
 ## ✅ Étape 1 : Prérequis - Les Outils Essentiels
 
 Pour construire notre projet, nous avons besoin de trois éléments fondamentaux : la machine, un moyen de s'y connecter et une adresse pour la trouver.
@@ -16,12 +19,9 @@ Pour communiquer avec notre serveur de manière sécurisée, nous utilisons le p
     * **macOS / Linux :** L'application "Terminal" est déjà installée.
 
 ### 3. L'Adresse (Le Panneau Indicateur)
- C'ests l'adresse IP de votre serveur. 
+C'est l'adresse IP de votre serveur.
 
-
-<div style="background-color: #f0f8ff; border-left: 6px solid #4285f4; padding: 15px; margin-top: 20px; margin-bottom: 20px; border-radius: 5px;">
-  <strong>Salut !</strong> Bienvenue dans ce projet de construction. Ici, tu vas apprendre à assembler un assistant robot intelligent qui peut discuter avec toi et t'aider à accomplir des tâches.
-</div>
+> **Salut !** Bienvenue dans ce projet de construction. Ici, tu vas apprendre à assembler un assistant robot intelligent qui peut discuter avec toi et t'aider à accomplir des tâches.
 
 ## Que fait ce robot ? 🧐
 
@@ -41,27 +41,26 @@ Notre robot possède une "boîte à outils" spéciale qui lui donne des capacit�
 ---
 
 #### 🕵️ L'outil d'identification
-* **Nom de code :** `<code>debugContextTool</code>`
+* **Nom de code :** `debugContextTool`
 * **Description :** Cet outil permet au robot de vérifier qui lui parle. C'est un peu comme un badge de sécurité qui confirme ton identité.
 
 ---
 
 #### 🐢 L'outil Marathon
-* **Nom de code :** `<code>asynchronousTaskSimulatorEnhanced</code>`
+* **Nom de code :** `asynchronousTaskSimulatorEnhanced`
 * **Description :** Pour les longues missions, comme un grand calcul. Le robot lance la tâche, te prévient qu'il a commencé, et t'envoie le résultat seulement quand il a fini. Idéal pour les processus qui prennent du temps.
 
 ---
 
 #### ⚡ L'outil Sprinter
-* **Nom de code :** `<code>synchronousExampleTool</code>`
+* **Nom de code :** `synchronousExampleTool`
 * **Description :** Pour les tâches très rapides. Le robot fait ce que tu demandes et te donne la réponse immédiatement !
 
 <br>
 
 ## Créez vos propres Outils ! 🎨
 
-<div style="background-color: #e6ffed; border: 1px solid #34a853; border-radius: 8px; padding: 20px; text-align: center;">
-  <h3>Le projet est modulaire !</h3>
-  <p>Le plus amusant, c'est que tu peux inventer et ajouter tes propres outils à la boîte à outils du robot pour lui donner de nouveaux super-pouvoirs !</p>
-  <p>N'hésite pas à expérimenter et à étendre les capacités de ton assistant.</p>
-</div>
+> ### Le projet est modulaire !
+> Le plus amusant, c'est que tu peux inventer et ajouter tes propres outils à la boîte à outils du robot pour lui donner de nouveaux super-pouvoirs !
+>
+> N'hésite pas à expérimenter et à étendre les capacités de ton assistant.
