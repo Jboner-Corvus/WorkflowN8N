@@ -89,11 +89,11 @@ Pour faire fonctionner l'agent, vous devez déployer ses deux composants princip
 
 #### Étape 2 : Installer le Serveur MCP
 
-Ensuite, clonez le dépôt du serveur MCP et suivez les instructions de son propre fichier `README.md` pour le configurer et le lancer.
+Voici le lien vers le dépôt du serveur MCP. Clonez-le et suivez les instructions de son propre fichier `README.md` pour le configurer et le lancer.
 
+Le dépôt est disponible ici : [MCP-Server-Asynchrone](https://github.com/Jboner-Corvus/MCP-Server-Asynchrone).
 
 ```bash
-
 git clone [https://github.com/Jboner-Corvus/MCP-Server-Asynchrone.git](https://github.com/Jboner-Corvus/MCP-Server-Asynchrone.git)
 cd MCP-Server-Asynchrone
 # Suivez les instructions du README de ce projet
